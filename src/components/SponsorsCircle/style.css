@@ -1,0 +1,42 @@
+.circle-box {
+    height: 267px;
+    width: 267px;
+    border-radius: 50%;
+}
+
+.circle-box.active {
+    background: var(--color-secondary-1);
+}
+
+.circle-box.active::before {
+    width: 248.96px;
+    height: 248.96px;
+    flex-shrink: 0;
+    content: url("/circle-round-border.svg");
+    position: absolute;
+    top: 9.02px;
+    bottom: 9.02px;
+    left: 9.02px;
+    right: 9.02px;
+}
+
+.circle-box.inactive::before {
+    width: 248.96px;
+    height: 248.96px;
+    flex-shrink: 0;
+    content: url("/circle-round-border-inactive.svg");
+    position: absolute;
+    top: 9.02px;
+    bottom: 9.02px;
+    left: 9.02px;
+    right: 9.02px;
+}
+
+.circle-box.inactive {
+    background: var(--color-neutral-3);
+}
+
+.active-text {
+    color: var(--color-primary-2);
+    font-family: "Sao Torpes";
+  }

@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 0;
+}
+
+.navigation .logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navigation .divider {
+  height: 1.25rem;
+  border: solid 1px var(--color-neutral-2);
+  border-radius: 2px;
+}
+
+.navigation .logo-details p.title {
+  font-family: ClashGrotesk, sans-serif;
+  font-size: 0.875rem;
+  line-height: normal;
+  font-weight: bold;
+color: var(--color-neutral-1);
+}
+
+.navigation .logo-details p.subtitle {
+  font-family: ClashGrotesk, sans-serif;
+  font-size: 0.875rem;
+  line-height: normal;
+  font-weight: 500;
+  color: var(--color-neutral-1);
+}
+
+.navigation .button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.1875rem;
+}

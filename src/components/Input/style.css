@@ -1,0 +1,51 @@
+
+.input {
+    padding: 18px 26px;
+    border-radius: 12px;
+    background: var(--color-secondary-2);
+    color: var(--color-neutral-2);
+    outline: none;
+    width: 100%;
+    position: relative;
+}
+
+.input::placeholder {
+    color: var(--color-secondary-4);
+}
+
+.input:focus {
+    outline: 2px solid var(--color-neutral-5);
+    background: var(--color-neutral-6);
+    color: var(--color-neutral-2);
+}
+
+.input.success {
+    outline: none;
+    background: var(--color-neutral-6);
+}
+
+.input.error {
+    color: var(--color-error-1);
+    background: var(--color-error-2);
+    outline: none;
+}
+
+.input.error::after {
+    content: url("/error-mark.svg");
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+}
+
+.input.success::before {
+    content: url("/check.svg");
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+}

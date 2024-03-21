@@ -1,0 +1,10 @@
+.apply-background {
+    background: var(--color-primary-1);
+    height: calc(100dvh + 100px);
+    width: 100%;
+    z-index: -1;
+    margin-top: -60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
